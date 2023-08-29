@@ -13,7 +13,7 @@ media_folder: static/img
 public_folder: /img
 
 i18n:
-  structure: single_file
+  structure: multiple_folders
   # Required - a list of locales to show in the editor UI
   locales: [en, es, ca]
 
