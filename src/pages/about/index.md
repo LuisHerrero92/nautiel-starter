@@ -1,8 +1,8 @@
 ---
 en:
   title: aasdawd
-  body: a﻿wdaawd
+  body: English
 es:
   title: Ola
-  body: j﻿ee
+  body: Español
 ---
