@@ -45,7 +45,7 @@ collections:
       - file: "src/pages/index.md"
         label: "Landing Page"
         name: "index"
-        i18n: true
+        i18n:
           structure: single_file
         fields:
           - {
