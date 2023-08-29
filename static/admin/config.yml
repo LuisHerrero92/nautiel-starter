@@ -13,7 +13,7 @@ media_folder: static/img
 public_folder: /img
 
 i18n:
-  structure: multiple_folders
+  structure: single_file
   # Required - a list of locales to show in the editor UI
   locales: [en, es, ca]
 
@@ -39,14 +39,14 @@ collections:
       - { label: "Tags", name: "tags", widget: "list" }
 
   - name: "pages"
-    i18n: true
+    i18n:
+      structure: single_file
     label: "Pages"
     files:
       - file: "src/pages/index.md"
         label: "Landing Page"
         name: "index"
-        i18n:
-          structure: single_file
+        i18n: true
         fields:
           - {
               label: "Template Key",
