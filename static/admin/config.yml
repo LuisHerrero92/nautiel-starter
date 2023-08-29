@@ -140,6 +140,7 @@ collections:
               name: "templateKey",
               widget: "hidden",
               default: "about-page",
+              i18n: false,
             }
           - { label: "Title", name: "title", widget: "string", i18n: true }
           - { label: "Body", name: "body", widget: "markdown", i18n: true }
