@@ -12,6 +12,11 @@ local_backend: true
 media_folder: static/img
 public_folder: /img
 
+i18n:
+  structure: multiple_folders
+  # Required - a list of locales to show in the editor UI
+  locales: [en, es, ca]
+
 collections:
   - name: "blog"
     label: "Blog"
@@ -34,11 +39,13 @@ collections:
       - { label: "Tags", name: "tags", widget: "list" }
 
   - name: "pages"
+    i18n: true
     label: "Pages"
     files:
       - file: "src/pages/index.md"
         label: "Landing Page"
         name: "index"
+        i18n: true
         fields:
           - {
               label: "Template Key",
@@ -46,10 +53,10 @@ collections:
               widget: "hidden",
               default: "index-page",
             }
-          - { label: Title, name: title, widget: string }
+          - { label: Title, name: title, widget: string, i18n: true }
           - { label: Image, name: image, widget: image }
-          - { label: Heading, name: heading, widget: string }
-          - { label: Subheading, name: subheading, widget: string }
+          - { label: Heading, name: heading, widget: string, i18n: true }
+          - { label: Subheading, name: subheading, widget: string, i18n: true }
           - {
               label: Mainpitch,
               name: mainpitch,
